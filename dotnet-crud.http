@@ -1,0 +1,14 @@
+@dotnet_crud_HostAddress = http://localhost:5080
+
+### Get all todo items
+GET {{dotnet_crud_HostAddress}}/api/todoitem
+Accept: application/json
+
+### Create a new todo item
+POST {{dotnet_crud_HostAddress}}/api/todoitem
+Content-Type: application/json
+
+{
+  "title": "Test my new dotnet api",
+  "isCompleted": false
+}
